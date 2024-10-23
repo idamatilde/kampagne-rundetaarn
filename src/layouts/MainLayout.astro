@@ -12,14 +12,21 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{Astro.props.title}</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	</head>
 	<body>
-
 		<header>
 			<Header></Header>
 		</header>
 		
 		<main>
+			<div class="panelCon">
+				<div id="pane-5" class="panel">Section 5</div>
+				<div id="pane-4" class="panel">Section 4</div>
+				<div id="pane-3" class="panel">Section 3</div>
+				<div id="pane-2" class="panel">Section 2</div>
+				<div id="pane-1" class="panel">Section 1</div>
+			</div>
 			<slot />
 		</main>
 
@@ -29,3 +36,44 @@ const { title } = Astro.props;
 			
 	</body>
 </html>
+
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		height: 500vh;
+	}
+
+	.panel {
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 30px;
+		line-height: 35px;
+		text-transform: uppercase;
+	}
+	#pane-1 {
+		background-color: pink;
+	}
+	#pane-2 {
+		background-color: #e8e8e8;
+	}
+	#pane-3 {
+		background-color: red;
+	}
+	#pane-4 {
+		background-color: pink;
+	}
+	#pane-5 {
+		background-color: yellow;
+	}
+</style>
+
+<script client:load>
+	$(window).on("scroll", function () {
+		$(".panelCon").css("bottom", $(window).scrollTop() * -1);
+	});
+</script>
+``
