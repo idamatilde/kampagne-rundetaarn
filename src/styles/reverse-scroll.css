@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  height: 500vh;
+  /* height: 500vh; */
 }
 
 #switch-btn {
@@ -70,10 +70,14 @@ body {
   background-color: pink;
 }
 #pane-2 {
-  background-image: url("/hj.jpg");
+  /* Set a specific height
+  min-height: 1000px;
+
+  /* Create the parallax scrolling effect 
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 #pane-3 {
   background-color: red;

@@ -2,7 +2,7 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import '../styles/tailwind.css';
-import '../styles/reverse-scroll.css';
+// import '../styles/reverse-scroll.css';
 import 'animate.css';
 import $ from "jquery";
 
@@ -17,20 +17,20 @@ const { title } = Astro.props;
 		<title>{Astro.props.title}</title>
 		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	</head>
-	<body>
+	<body >
 
 		<header>
 			<Header></Header>
 		</header>
 		
-		<main>
+		<main >
 			<slot />
 		</main>
 
 		<footer>
 			<Footer></Footer>
 		</footer>
-		<script
+		<!-- <script
 		src="https://code.jquery.com/jquery-3.5.1.js"
 		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
 		crossorigin="anonymous"
@@ -51,7 +51,7 @@ const { title } = Astro.props;
 
 
 	
-	  </script>
+	  </script> -->
 	</body>
 
 </html>
