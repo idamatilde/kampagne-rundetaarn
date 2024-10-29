@@ -70,7 +70,10 @@ body {
   background-color: pink;
 }
 #pane-2 {
-  background-color: #e8e8e8;
+  background-image: url("/hj.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #pane-3 {
   background-color: red;
