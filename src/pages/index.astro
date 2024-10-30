@@ -8,7 +8,7 @@ import udsigt from "../assets/images/udsigtfrarundetaarn.png";
 import mennesker from "../assets/images/people_in_line.png";
 ---
 <MainLayout title="Titel">
-	<article class="h-[550vh] bg-auto bg-center bg-no-repeat z-10" style="background-image: url('../../public/rundetaarn_baggrund.png');">
+	<article class="h-[550vh] bg-auto bg-center bg-no-repeat z-50" style="background-image: url('../../public/rundetaarn_baggrund.png');">
 		<div class="panelCon h-full flex flex-col justify-between">
 			<div id="pane-5" class="panel">Section 5</div>
 			<div id="pane-4" class="panel">Section 4</div>
@@ -17,11 +17,12 @@ import mennesker from "../assets/images/people_in_line.png";
 				<p class="parallaxelement w-3/4 mx-auto p-10 bg-slate-50 text-xl">På toppen af rundetårnet, ligger Europas ældste observatorium, som er førhen blev benyttet af de førende danske astronomer.
 				</p>
 			</div>
-			<div id="pane-1" class="panel h-screen w-100">
+
+			<div id="pane-1" class="panel h-screen w-100 z-10 flex flex-col" >
 				<p class="parallaxelement1 w-3/4 mx-auto p-10 bg-slate-50 text-xl">På toppen af rundetårnet, ligger Europas ældste observatorium, som er førhen blev benyttet af de førende danske astronomer.
 				</p>
-				<Image class="z-10 origin-bottom" src={udsigt} alt="udsigt fra rundetårn/bybillede af KBH"/>
-				<Image class="z-10 origin-bottom w-2/4" src={mennesker} alt="udsigt fra rundetårn/bybillede af KBH"/>
+				<Image class="z-10 w-2/4 flex-end mt-[220px]" src={mennesker} alt="udsigt fra rundetårn/bybillede af KBH"/>
+				<div class="z-50" style="background-image: url('../../public/udsigtfrarundetaarn.png');"></div>
 			</div>
 			
 		</div>
