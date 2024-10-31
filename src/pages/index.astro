@@ -46,15 +46,21 @@ import tychoGif from "../assets/images/gifs/tycho-fold-1.gif";
 					</div>
 </section>
 </div>
-			<div id="pane-1" class="panel h-screen w-100 z-10 flex flex-col" >
-				<p class="parallaxelement1 w-3/4 mx-auto p-10 bg-slate-50 text-xl">På toppen af rundetårnet, ligger Europas ældste observatorium, som er førhen blev benyttet af de førende danske astronomer.
-				</p>
-				<p class="parallaxelement2 w-3/4 mx-auto p-10 bg-slate-50 text-xl">På toppen af rundetårnet, ligger Europas ældste observatorium, som er førhen blev benyttet af de førende danske astronomer.
-				</p>
-				<p class="parallaxelement3 w-3/4 mx-auto p-10 bg-slate-50 text-xl">På toppen af rundetårnet, ligger Europas ældste observatorium, som er førhen blev benyttet af de førende danske astronomer.
-				</p>
-				<Image class="z-10 w-2/4 flex-end mt-[220px]" src={mennesker} alt="udsigt fra rundetårn/bybillede af KBH"/>
-				<div class="z-50" style="background-image: url('../../public/udsigtfrarundetaarn.png');"></div>
+<div id="pane-1" class="panel h-screen w-100 z-10 flex flex-col" >
+				<div class="w-[750px] parallaxelement13 mx-auto p-10 h-auto bg-no-repeat bg-cover" style="background-image: url('../../public/papir-lap.png');">
+					<p class=" w-3/4 mx-auto ">Tårnet blev opført af Christian IV i 1642 for at fremme studiet af stjerner og videnskab og er stadig et symbol på Danmarks historiske engagement i forskning og opdagelser.
+					</p>
+				</div>
+				<div class="w-[750px] parallaxelement12 mx-auto p-10 h-auto bg-no-repeat bg-cover" style="background-image: url('../../public/papir-lap.png');">
+					<p class=" w-3/4 mx-auto ">Rundetårn er ikonisk i dansk astronomi og videnskab, fordi det blev bygget som et af Europas første observatorier og fungerede som centrum for astronomisk forskning i Danmark. 
+					</p>
+				</div>
+				<div class="w-[750px] parallaxelement11 mx-auto p-10 h-auto bg-no-repeat bg-cover" style="background-image: url('../../public/papir-lap.png');">
+						<p class=" w-3/4 mx-auto ">På toppen af rundetårnet, ligger Europas ældste observatorium, som er førhen blev benyttet af de førende danske astronomer.
+						</p>
+				</div>
+				<Image class="z-10 w-2/4 flex-end " src={mennesker} alt="udsigt fra rundetårn/bybillede af KBH"/>
+				<div class="z-1000 w-screen" style="background-image: url('../../public/udsigtfrarundetaarn.png');"></div>
 			</div>
 			
 		</div>
@@ -66,16 +72,16 @@ import tychoGif from "../assets/images/gifs/tycho-fold-1.gif";
 	import { animate, stagger, inView, scroll, timeline } from "motion";
 
 
-	scroll(animate(".parallaxelement", { y: [50, 500] }), {
-		target: document.querySelector(".parallaxelement"),
+	scroll(animate(".parallaxelement11", { y: [50, 500] }), {
+		target: document.querySelector(".parallaxelement11"),
 	});
 
-	scroll(animate(".parallaxelement1", { y: [55, 600] }), {
-		target: document.querySelector(".parallaxelement1"),
+	scroll(animate(".parallaxelement12", { y: [60, 500] }), {
+		target: document.querySelector(".parallaxelement12"),
 	});
 
-	scroll(animate(".parallaxelement2", { y: [70, 1000] }), {
-		target: document.querySelector(".parallaxelement1"),
+	scroll(animate(".parallaxelement13", { y: [70, 500] }), {
+		target: document.querySelector(".parallaxelement13"),
 	});
 
 	scroll(animate(".parallaxelement2", { y: [60, 1000] }), {
