@@ -27,7 +27,7 @@ Med kikkerten kan besøgende udforske månen, planeterne og stjernerne. Det mode
 
 </section>
 </div>
-			<div id="pane-3" class="panel h-screen w-100">
+			<div id="pane-3" class="panel h-screen w-100 mt-96">
 				<section class="grid grid-cols-2">
 					<div>
 					<div class="w-[750px] parallaxelement mx-auto p-10 h-auto bg-no-repeat bg-cover" style="background-image: url('../../public/papir-lap.png');">
@@ -36,30 +36,30 @@ Med kikkerten kan besøgende udforske månen, planeterne og stjernerne. Det mode
 					<div class="w-[750px] parallaxelement mx-auto p-10 h-auto bg-no-repeat bg-cover mt-24 ml-20" style="background-image: url('../../public/papir-lap.png');">
 						<p class="mx-auto px-16 text-xl"> Selvom Rundetårn ofte forbindes med Tycho Brahe, havde han faktisk ikke noget med selve tårnet at gøre, da det blev bygget efter hans tid. Rundetårn blev opført i 1642 som observatorium af Christian IV for at fortsætte den astronomiske arv, 
 						</p></div>
-						<div class="parallaxelement mx-auto flex flex-col content-center items-center"><h1 class="text-7xl">Tycho Brahe</h1></div>
+						<div class="parallaxelement mx-auto flex flex-col content-center items-center titlebackground1"><h1 class="">Tycho Brahe</h1></div>
 				</div>
 	<img class="h-5/6 w-auto ml-20" src="tycho-fold-1.gif" alt="Gif af Tycho Brahe">
 	</section>
 		</div>
-			<div id="pane-2" class="panel h-screen w-100">
+			<div id="pane-2" class="panel h-screen w-100 mt-96">
 				<section class="grid grid-cols-2">
-					<img class="h-5/6 w-auto" src="Chris-fold-1.gif" alt="Gif af Christian d. 4">
+					<img class="h-5/6 w-auto mt-10" src="Chris-fold-1.gif" alt="Gif af Christian d. 4">
 				<div class="mr-20">
-				<div class="w-[750px] parallaxelement1 mx-auto p-10 h-auto bg-no-repeat bg-cover" style="background-image: url('../../public/papir-lap.png');">
+				<div class="w-[750px] parallaxelement24 mx-auto p-10 h-auto bg-no-repeat bg-cover" style="background-image: url('../../public/papir-lap.png');">
 				<p class="mx-auto px-16 text-xl"> Tårnet blev opført af Christian IV i 1642 for at fremme studiet af stjerner og videnskab og er stadig et symbol på Danmarks historiske engagement i forskning og opdagelser.
 				</p></div>
-				<div class="w-[750px] parallaxelement1 mx-auto p-10 h-auto bg-no-repeat bg-cover mt-24 ml-10" style="background-image: url('../../public/papir-lap.png');">
+				<div class="w-[750px] parallaxelement23 mx-auto p-10 h-auto bg-no-repeat bg-cover mt-24 ml-10" style="background-image: url('../../public/papir-lap.png');">
 					<p class="mx-auto px-16 text-xl"> Rundetårn er ikonisk i dansk astronomi og videnskab, fordi det blev bygget som et af Europas første observatorier og fungerede som centrum for astronomisk forskning i Danmark.
 					</p></div>
-					<div class="w-[750px] parallaxelement1 mx-auto p-10 h-auto bg-no-repeat bg-cover mt-24 mr-20" style="background-image: url('../../public/papir-lap.png');">
+					<div class="w-[750px] parallaxelement22 mx-auto p-10 h-auto bg-no-repeat bg-cover mt-24 mr-20" style="background-image: url('../../public/papir-lap.png');">
 						<p class="mx-auto px-16 text-xl"> På toppen af rundetårnet, ligger Europas ældste observatorium, som er førhen blev benyttet af de førende danske astronomer.
 						</p></div>
-					<div class="parallaxelement mx-auto flex flex-col content-center items-center"><h1 class="text-7xl">Christian d. 4</h1></div>
+					<div class="parallaxelement21 mx-auto flex flex-col content-center items-center titlebackground1"><h1 class="">Christian d. 4</h1></div>
 					
 					</div>
 </section>
 </div>
-<div id="pane-1" class="panel h-screen w-100 z-10 flex flex-col " >
+<div id="pane-1" class="panel h-screen w-100 z-10 flex flex-col mt-96" >
 				<div class="w-[750px] parallaxelement13 p-10 h-auto bg-no-repeat bg-cover" style="background-image: url('../../public/papir-lap.png');">
 					<p class=" w-3/4 mx-auto ">Tårnet blev opført af Christian IV i 1642 for at fremme studiet af stjerner og videnskab og er stadig et symbol på Danmarks historiske engagement i forskning og opdagelser.
 					</p>
@@ -107,12 +107,20 @@ Med kikkerten kan besøgende udforske månen, planeterne og stjernerne. Det mode
 		target: document.querySelector(".parallaxelement13"),
 	});
 
-	scroll(animate(".parallaxelement2", { y: [60, 1000] }), {
-		target: document.querySelector(".parallaxelement2"),
+	scroll(animate(".parallaxelement21", { y: [-1000, 30, 30] }), {
+		target: document.querySelector(".parallaxelement21"),
 	});
 
-	scroll(animate(".parallaxelement3", { y: [60, 1100] }), {
-		target: document.querySelector(".parallaxelement3"),
+	scroll(animate(".parallaxelement22", { y: [-1400, 30, 500] }), {
+		target: document.querySelector(".parallaxelement22"),
+	});
+
+	scroll(animate(".parallaxelement23", { y: [-1500, 30, 500] }), {
+		target: document.querySelector(".parallaxelement23"),
+	});
+
+	scroll(animate(".parallaxelement24", { y: [-1600, 30, 500] }), {
+		target: document.querySelector(".parallaxelement24"),
 	});
 
 	document.addEventListener("DOMContentLoaded", function() {
