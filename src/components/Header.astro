@@ -5,7 +5,7 @@
 
   <nav class="head_container ">
 
-    <div class="burger-icon mt-6 mr-2 sticky top-0">
+    <div class="burger-icon mt-6 mr-2 fixed top-0">
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
@@ -48,12 +48,16 @@
 
   /* Styling the burger-menu icon */
   .burger-icon {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 0;
     z-index: 50;
     display: flex;
     flex-direction: column;
     cursor: pointer;
     align-items: end;
+    padding: 1rem;
+  
 
     & .bar {
       width: 40px;
@@ -122,7 +126,7 @@
   }
 
   .menu-link h3:hover {
-    text-transform: uppercase;
+    color: #FAB300;
   }
 
   @media (min-width: 769px) {
