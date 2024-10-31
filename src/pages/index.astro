@@ -32,11 +32,14 @@ import Nyhedsbrev from "../components/Nyhedsbrev.astro"
 				<section class="grid grid-cols-2">
 				<img class="h-full w-2/3 ml-20 " src="teleskop-fold.gif" alt="Gif af teleskop">
 				<div>
-				<div class="w-auto parallaxelement41 mx-auto p-10 h-auto bg-no-repeat bg-cover" style="background-image: url('../../public/papir-lap.png');">
-				<p class="mx-auto px-16 text-xl"> I dag har alle mulighed for at udnytte observatiomet. 
-					Fra oktober til marts, er der åbent kl. 18-21 i observatoiet, så man kan komme op og kigge gennem stjernekiggerten. Her er der rig mulighed for at se planeter og meteorsværme.<br><br> Se kalenderen for hvornår man kan se diverse himmelfænomener. 
+					<div class="w-auto parallaxelement41 mx-auto p-10 h-auto bg-no-repeat bg-cover" style="background-image: url('../../public/papir-lap.png');">
+						<p class="mx-auto px-16 text-xl"> Se <a id="kalender" class="text-[#FFCD03]" href="https://www.rundetaarn.dk/det-sker/">kalenderen</a> for hvornår man kan se diverse himmelfænomener. 
+						</p></div>
+				<div class="w-auto parallaxelement42 mx-auto p-10 h-auto bg-no-repeat bg-cover" style="background-image: url('../../public/papir-lap.png');">
+				<p class="mx-auto px-16 text-xl"> I dag har alle mulighed for at udnytte observatoriet. 
+					Fra oktober til marts, er der åbent kl. 18-21 i observatoriet, så man kan komme op og kigge gennem stjernekiggerten. Her er der rig mulighed for at se planeter og meteorsværme. 
 				</p></div>
-				<div class="w-auto parallaxelement42 mx-auto p-10 h-auto bg-no-repeat bg-cover mt-24 ml-20" style="background-image: url('../../public/papir-lap.png');">
+				<div class="w-auto parallaxelement43 mx-auto p-10 h-auto bg-no-repeat bg-cover mt-24 ml-20" style="background-image: url('../../public/papir-lap.png');">
 					<p class="mx-auto px-16 text-xl"> Observatoriet i Rundetårn er udstyret med en historisk stjernekikkert fra 1929, der stadig bruges til offentlige observationer af nattehimlen.<br><br>
 Med kikkerten kan besøgende udforske månen, planeterne og stjernerne. Det moderne observatorium suppleres med nyere teleskoper og guider, som giver indsigt i astronomiens historie og universets undere. 
 					</p></div>
@@ -168,11 +171,14 @@ Med kikkerten kan besøgende udforske månen, planeterne og stjernerne. Det mode
 	});
 
 
-	scroll(animate(".parallaxelement41", { y: [-600, 20, 500] }), {
+	scroll(animate(".parallaxelement41", { y: [-500, 30, 500] }), {
 		target: document.querySelector(".parallaxelement41"),
 	});
 	scroll(animate(".parallaxelement42", { y: [-500, 30, 500] }), {
 		target: document.querySelector(".parallaxelement42"),
+	});
+	scroll(animate(".parallaxelement43", { y: [-600, 30, 500] }), {
+		target: document.querySelector(".parallaxelement43"),
 	});
 	
 	scroll(
