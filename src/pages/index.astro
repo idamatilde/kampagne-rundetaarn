@@ -4,13 +4,15 @@ import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
-import udsigt from "../assets/images/udsigtfrarundetaarn.png";
+import udsigt from "../assets/images/udsigt.png";
 import mennesker from "../assets/images/people_in_line.png";
 import tychoGif from "../assets/images/gifs/tycho-fold-1.gif";
 ---
 <MainLayout title="Titel">
-	<article class="h-[550vh] bg-auto bg-center bg-no-repeat z-50" style="background-image: url('../../public/rundetaarn_baggrund.png');">
-		<div class="panelCon h-full flex flex-col justify-between">
+	<article>
+		<div class="absolute">
+			<img class="h-full bg-auto bg-center bg-no-repeat -z-40 relative bottom-0" src="../../public/rundetaarn_baggrund.png" alt="rundetårn">
+		</div>
 			<div id="pane-5" class="panel">Section 5</div>
 			<div id="pane-4" class="panel h-screen w-100"><section class="grid grid-cols-2">
 				<img class="h-4/6 w-auto ml-20" src="teleskop-fold.gif" alt="Gif af teleskop">
@@ -83,6 +85,7 @@ Med kikkerten kan besøgende udforske månen, planeterne og stjernerne. Det mode
 					<source src="city_noise.mp3" type="audio/mpeg">
 				</audio>
 			</div>
+			<Image class="-z-50 relative w-full h-full" src={udsigt} alt="udsigten fra rundetårn"  />
 	<!-- <div class=""><Image class="w-2/3 " src={udsigt} alt="mennesker i kø"/></div> 
  <div class="z-1000 w-screen" style="background-image: url('../../public/udsigtfrarundetaarn.png');"></div> -->
 
