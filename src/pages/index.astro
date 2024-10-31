@@ -24,11 +24,11 @@ import starSky from "../assets/images/star-sky.jpg";
 			<section class="grid grid-cols-2">
 				<img class="h-full w-2/3 ml-20" src="teleskop-fold.gif" alt="Gif af teleskop">
 				<div>
-				<div class="w-[750px] parallaxelement mx-auto p-10 h-auto bg-no-repeat bg-cover" style="background-image: url('../../public/papir-lap.png');">
+				<div class="w-[750px] parallaxelement41 mx-auto p-10 h-auto bg-no-repeat bg-cover" style="background-image: url('../../public/papir-lap.png');">
 				<p class="mx-auto px-16 text-xl"> I dag har alle mulighed for at udnytte observatiomet. 
 					Fra oktober til marts, er der åbent kl. 18-21 i observatoiet, så man kan komme op og kigge gennem stjernekiggerten. Her er der rig mulighed for at se planeter og meteorsværme.<br><br> Se kalenderen for hvornår man kan se diverse himmelfænomener. 
 				</p></div>
-				<div class="w-[750px] parallaxelement mx-auto p-10 h-auto bg-no-repeat bg-cover mt-24 ml-20" style="background-image: url('../../public/papir-lap.png');">
+				<div class="w-[750px] parallaxelement42 mx-auto p-10 h-auto bg-no-repeat bg-cover mt-24 ml-20" style="background-image: url('../../public/papir-lap.png');">
 					<p class="mx-auto px-16 text-xl"> Observatoriet i Rundetårn er udstyret med en historisk stjernekikkert fra 1929, der stadig bruges til offentlige observationer af nattehimlen.<br><br>
 Med kikkerten kan besøgende udforske månen, planeterne og stjernerne. Det moderne observatorium suppleres med nyere teleskoper og guider, som giver indsigt i astronomiens historie og universets undere. 
 					</p></div>
@@ -70,7 +70,7 @@ Med kikkerten kan besøgende udforske månen, planeterne og stjernerne. Det mode
 			</div>
 </section>
 </div>
-<div id="pane-1" class="panel h-screen w-100 z-10 flex flex-col mt-60" >
+<div id="pane-1" class="panel h-4 w-100 z-10 flex flex-col mt-60" >
 				<!-- <div class="w-[750px] parallaxelement13 p-10 h-auto bg-no-repeat bg-cover" style="background-image: url('../../public/papir-lap.png');">
 					<p class=" w-3/4 mx-auto ">Tårnet blev opført af Christian IV i 1642 for at fremme studiet af stjerner og videnskab og er stadig et symbol på Danmarks historiske engagement i forskning og opdagelser.
 					</p>
@@ -145,6 +145,12 @@ Med kikkerten kan besøgende udforske månen, planeterne og stjernerne. Det mode
 		target: document.querySelector(".parallaxelement33"),
 	});
 
+	scroll(animate(".parallaxelement41", { y: [-1500, 30, 500] }), {
+		target: document.querySelector(".parallaxelement33"),
+	});
+	scroll(animate(".parallaxelement42", { y: [-1500, 30, 500] }), {
+		target: document.querySelector(".parallaxelement33"),
+	});
 	
 	scroll(
     animate(".scrollzoomimg", { 
