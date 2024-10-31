@@ -8,6 +8,7 @@ import udsigt from "../assets/images/udsigt.png";
 import mennesker from "../assets/images/people_in_line.png";
 import tychoGif from "../assets/images/gifs/tycho-fold-1.gif";
 import starSky from "../assets/images/star-sky.jpg";
+import Nyhedsbrev from "../components/Nyhedsbrev.astro"
 
 ---
 <MainLayout title="Titel">
@@ -18,6 +19,8 @@ import starSky from "../assets/images/star-sky.jpg";
 		<div id="pane-6" class="panel h-screen w-100 relative"><section class="">
 			<Image src={starSky} class=" w-full" alt=""></Image>
 			</section> </div>
+		<a href="https://mailchi.mp/rundetaarn/nyhedsbrev-tilmelding" target="_blank"><Nyhedsbrev></Nyhedsbrev></a>
+		
 		<div id="pane-5" class="panel -z-50 relative"><section class="scrollzoom overflow-clip absolute">
 			<Image src={starSky} class="scrollzoomimg w-full" alt="">
 			</section> </div>
