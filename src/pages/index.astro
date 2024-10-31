@@ -63,7 +63,7 @@ Med kikkerten kan besøgende udforske månen, planeterne og stjernerne. Det mode
 	<img class="h-full w-2/3 ml-20" src="tycho-fold-1.gif" alt="Gif af Tycho Brahe">
 	</section>	
 </div>
-<div id="pane-1" class="panel h-screen w-100 z-10 flex flex-col mt-60" >
+<div id="pane-1" class="panel h-screen w-100 z-10 flex flex-col mt-60 mb-60" >
 	<section class="grid grid-cols-2">
 					<img class="h-5/6 w-2/3 mt-10" src="Chris-fold-1.gif" alt="Gif af Christian d. 4">
 				<div class="mr-20">
@@ -102,6 +102,12 @@ Med kikkerten kan besøgende udforske månen, planeterne og stjernerne. Det mode
 				<source src="city_noise.mp3" type="audio/mpeg">
 			</audio>
 			
+			<div class="w-screen flex flex-row-reverse absolute mt-4 inviewelement1">
+				<div>
+					<h1 class="text-right text-[#FAB300]">Rundetaarnets <br> astronomiske historie</h1>
+					<p class="p-2 pr-6 mt-2 text-right titlebackground2">Scroll op, og oplev universet fra Rundetårns top.</p>
+				</div>
+			</div>
 			<Image class="-z-50 relative w-full h-full" src={udsigt} alt="udsigten fra rundetårn"  />
 			<!-- <div class=""><Image class="w-2/3 " src={udsigt} alt="mennesker i kø"/></div> 
 			<div class="z-1000 w-screen" style="background-image: url('udsigtfrarundetaarn.png');"></div> -->
@@ -127,6 +133,12 @@ Med kikkerten kan besøgende udforske månen, planeterne og stjernerne. Det mode
 	inView(
 		inviewelement , () => {
 			inviewelement.classList.add("animate__animated","animate__fadeInBottomLeft", "animate__delay-1s")
+		})
+
+		const inviewelement1 = document.querySelector(".inviewelement1");
+	inView(
+		inviewelement1 , () => {
+			inviewelement1.classList.add("animate__animated","animate__fadeInRight", "animate__delay-1s")
 		})
 
 
