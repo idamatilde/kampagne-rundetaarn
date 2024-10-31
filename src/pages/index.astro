@@ -15,7 +15,7 @@ import starSky from "../assets/images/star-sky.jpg";
 		<div class="panelCon h-full flex flex-col justify-between">
 			<div id="pane-5" class="panel">
 				<section class="scrollzoom overflow-clip">
-					<Image src={starSky} class="scrollzoomimg w-full" alt="">
+					<Image src={starSky} class="scrollzoomimg w-full -z-40" alt="">
 					</section> 				
 			</div>
 			<div id="pane-4" class="panel h-screen w-100"><section class="grid grid-cols-2">
@@ -135,7 +135,7 @@ Med kikkerten kan besøgende udforske månen, planeterne og stjernerne. Det mode
     }),
     { 
       target: document.querySelector(".scrollzoom"),
-      offset: ["0.75 end", "end end"]
+      offset: ["end end", "0.75 end"]
     }
     )
 
