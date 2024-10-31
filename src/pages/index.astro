@@ -120,6 +120,16 @@ Med kikkerten kan besøgende udforske månen, planeterne og stjernerne. Det mode
 	scroll(animate(".parallaxelement3", { y: [60, 1100] }), {
 		target: document.querySelector(".parallaxelement3"),
 	});
+	
+	scroll(
+    animate(".scrollzoomimg", { 
+        scale: [1, 1.5]    
+    }),
+    { 
+      target: document.querySelector(".scrollzoom"),
+      offset: ["0.75 end", "end end"]
+    }
+    )
 
 	document.addEventListener("DOMContentLoaded", function() {
   window.scrollTo(0, document.body.scrollHeight);
