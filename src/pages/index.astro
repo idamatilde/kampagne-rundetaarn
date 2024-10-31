@@ -21,6 +21,10 @@ import mennesker from "../assets/images/people_in_line.png";
 			<div id="pane-1" class="panel h-screen w-100 z-10 flex flex-col" >
 				<p class="parallaxelement1 w-3/4 mx-auto p-10 bg-slate-50 text-xl">På toppen af rundetårnet, ligger Europas ældste observatorium, som er førhen blev benyttet af de førende danske astronomer.
 				</p>
+				<p class="parallaxelement2 w-3/4 mx-auto p-10 bg-slate-50 text-xl">På toppen af rundetårnet, ligger Europas ældste observatorium, som er førhen blev benyttet af de førende danske astronomer.
+				</p>
+				<p class="parallaxelement3 w-3/4 mx-auto p-10 bg-slate-50 text-xl">På toppen af rundetårnet, ligger Europas ældste observatorium, som er førhen blev benyttet af de førende danske astronomer.
+				</p>
 				<Image class="z-10 w-2/4 flex-end mt-[220px]" src={mennesker} alt="udsigt fra rundetårn/bybillede af KBH"/>
 				<div class="z-50" style="background-image: url('../../public/udsigtfrarundetaarn.png');"></div>
 			</div>
@@ -40,6 +44,14 @@ import mennesker from "../assets/images/people_in_line.png";
 
 	scroll(animate(".parallaxelement1", { y: [60, 800] }), {
 		target: document.querySelector(".parallaxelement1"),
+	});
+
+	scroll(animate(".parallaxelement2", { y: [60, 1000] }), {
+		target: document.querySelector(".parallaxelement2"),
+	});
+
+	scroll(animate(".parallaxelement3", { y: [60, 11h00] }), {
+		target: document.querySelector(".parallaxelement3"),
 	});
 
 	document.addEventListener("DOMContentLoaded", function() {
