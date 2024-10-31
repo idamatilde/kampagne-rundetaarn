@@ -7,12 +7,20 @@
 
 h1 {
   font-family: Niramit;
-  font-size: 89.76px;
+  font-size: 3.8rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 14.362px;
   text-transform: uppercase;
+}
+.titlebackground1 {
+  background: rgb(250, 179, 0);
+  background: linear-gradient(110deg, rgba(250, 179, 0, 1) 46%, rgba(0, 19, 124, 0) 100%);
+}
+.titlebackground2 {
+  background: rgb(0, 19, 124);
+  background: linear-gradient(110deg, rgba(0, 19, 124, 0) 0%, rgba(250, 179, 0, 1) 49%);
 }
 
 h2 {
