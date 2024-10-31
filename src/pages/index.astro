@@ -60,22 +60,31 @@ Med kikkerten kan besøgende udforske månen, planeterne og stjernerne. Det mode
 </section>
 </div>
 <div id="pane-1" class="panel h-screen w-100 z-10 flex flex-col" >
-				<div class="w-[750px] parallaxelement13 mx-auto p-10 h-auto bg-no-repeat bg-cover" style="background-image: url('../../public/papir-lap.png');">
+				<div class="w-[750px] parallaxelement13 p-10 h-auto bg-no-repeat bg-cover" style="background-image: url('../../public/papir-lap.png');">
 					<p class=" w-3/4 mx-auto ">Tårnet blev opført af Christian IV i 1642 for at fremme studiet af stjerner og videnskab og er stadig et symbol på Danmarks historiske engagement i forskning og opdagelser.
 					</p>
 				</div>
-				<div class="w-[750px] parallaxelement12 mx-auto p-10 h-auto bg-no-repeat bg-cover" style="background-image: url('../../public/papir-lap.png');">
-					<p class=" w-3/4 mx-auto ">Rundetårn er ikonisk i dansk astronomi og videnskab, fordi det blev bygget som et af Europas første observatorier og fungerede som centrum for astronomisk forskning i Danmark. 
-					</p>
+				<div class="flex flex-row-reverse">
+					<div class="w-[750px] parallaxelement12  p-10 h-auto bg-no-repeat bg-cover" style="background-image: url('../../public/papir-lap.png');">
+						<p class=" w-3/4 mx-auto ">Rundetårn er ikonisk i dansk astronomi og videnskab, fordi det blev bygget som et af Europas første observatorier og fungerede som centrum for astronomisk forskning i Danmark. 
+						</p>
+					</div>
 				</div>
 				<div class="w-[750px] parallaxelement11 mx-auto p-10 h-auto bg-no-repeat bg-cover" style="background-image: url('../../public/papir-lap.png');">
 						<p class=" w-3/4 mx-auto ">På toppen af rundetårnet, ligger Europas ældste observatorium, som er førhen blev benyttet af de førende danske astronomer.
 						</p>
 				</div>
-				<Image class="z-10 w-2/4 flex-end " src={mennesker} alt="udsigt fra rundetårn/bybillede af KBH"/>
-				<div class="z-1000 w-screen" style="background-image: url('../../public/udsigtfrarundetaarn.png');"></div>
 			</div>
 			
+			<div class="relative mt-4">
+				<Image class="w-2/3 cursor-pointer" src={mennesker} alt="mennesker i kø" onclick="playSound()" />
+				<audio autoplay id="city-sound">
+					<source src="city_noise.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+	<!-- <div class=""><Image class="w-2/3 " src={udsigt} alt="mennesker i kø"/></div> 
+ <div class="z-1000 w-screen" style="background-image: url('../../public/udsigtfrarundetaarn.png');"></div> -->
+
 		</div>
 	</article>
 </MainLayout>
@@ -85,15 +94,15 @@ Med kikkerten kan besøgende udforske månen, planeterne og stjernerne. Det mode
 	import { animate, stagger, inView, scroll, timeline } from "motion";
 
 
-	scroll(animate(".parallaxelement11", { y: [50, 500] }), {
+	scroll(animate(".parallaxelement11", { y: [-1000, 30, 1000] }), {
 		target: document.querySelector(".parallaxelement11"),
 	});
 
-	scroll(animate(".parallaxelement12", { y: [60, 500] }), {
+	scroll(animate(".parallaxelement12", { y: [-1400, 60, 500] }), {
 		target: document.querySelector(".parallaxelement12"),
 	});
 
-	scroll(animate(".parallaxelement13", { y: [70, 500] }), {
+	scroll(animate(".parallaxelement13", { y: [-1600, 70, 500] }), {
 		target: document.querySelector(".parallaxelement13"),
 	});
 
@@ -109,4 +118,4 @@ Med kikkerten kan besøgende udforske månen, planeterne og stjernerne. Det mode
   window.scrollTo(0, document.body.scrollHeight);
 });
 	
-	</script>
+</script>
