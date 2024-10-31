@@ -22,7 +22,7 @@ import starSky from "../assets/images/star-sky.jpg";
 
 		<div id="pane-4" class="panel h-screen w-100">
 			<section class="grid grid-cols-2">
-				<img class="h-full w-2/3 ml-20" src="teleskop-fold.gif" alt="Gif af teleskop">
+				<img class="h-full w-2/3 ml-20 " src="teleskop-fold.gif" alt="Gif af teleskop">
 				<div>
 				<div class="w-[750px] parallaxelement41 mx-auto p-10 h-auto bg-no-repeat bg-cover" style="background-image: url('../../public/papir-lap.png');">
 				<p class="mx-auto px-16 text-xl"> I dag har alle mulighed for at udnytte observatiomet. 
@@ -145,11 +145,12 @@ Med kikkerten kan besøgende udforske månen, planeterne og stjernerne. Det mode
 		target: document.querySelector(".parallaxelement33"),
 	});
 
-	scroll(animate(".parallaxelement41", { y: [-1500, 30, 500] }), {
-		target: document.querySelector(".parallaxelement33"),
+
+	scroll(animate(".parallaxelement41", { y: [-600, 20, 500] }), {
+		target: document.querySelector(".parallaxelement41"),
 	});
-	scroll(animate(".parallaxelement42", { y: [-1500, 30, 500] }), {
-		target: document.querySelector(".parallaxelement33"),
+	scroll(animate(".parallaxelement42", { y: [-500, 30, 500] }), {
+		target: document.querySelector(".parallaxelement42"),
 	});
 	
 	scroll(
