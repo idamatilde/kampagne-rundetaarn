@@ -18,7 +18,7 @@ import Nyhedsbrev from "../components/Nyhedsbrev.astro"
 		</div>
 		
 		<div id="pane-5" class="panel -z-50 relative h-[200vh]">
-			<a href="https://mailchi.mp/rundetaarn/nyhedsbrev-tilmelding" target="_blank" class="z-50 absolute"><Nyhedsbrev></Nyhedsbrev></a>
+	<a href="https://mailchi.mp/rundetaarn/nyhedsbrev-tilmelding" target="_blank" class="inviewelement z-50 absolute mt-[200px] ml-[300px] "><Nyhedsbrev></Nyhedsbrev></a>
 			<section class="scrollzoom overflow-clip absolute div-sticky-class">
 				
 			<Image src={starSky} class=" scrollzoomimg w-full" alt="">
@@ -118,6 +118,13 @@ Med kikkerten kan besøgende udforske månen, planeterne og stjernerne. Det mode
 <script>
 	/* Import af Motion One biblioteket */
 	import { animate, stagger, inView, scroll, timeline } from "motion";
+
+	const inviewelement = document.querySelector(".inviewelement");
+	inView(
+		inviewelement , () => {
+			inviewelement.classList.add("animate__animated","animate__fadeInBottomLeft", "animate__delay-2s")
+		})
+
 
 
 	// scroll(animate(".parallaxelement11", { y: [-1000, 30, 500] }), {
